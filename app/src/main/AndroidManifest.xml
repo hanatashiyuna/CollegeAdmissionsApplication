@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CollegeAdmissionsApplication">
         <activity
+            android:name=".UI.Activities.UserInforActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Activities.ScoreExamAdmissionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Activities.SchoolProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Activities.CompetencyAssessmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Activities.AdmissionMethodActivity"
+            android:exported="false" />
+        <activity
             android:name=".UI.Activities.ProfileActivity"
             android:exported="false" />
         <activity
