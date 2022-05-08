@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".UI.Activities.ProfileActivity"
-    android:paddingTop="30dp">
+    android:paddingTop="30dp"
+    android:background="@color/gray">
 
     <ImageView
         android:id="@+id/back"

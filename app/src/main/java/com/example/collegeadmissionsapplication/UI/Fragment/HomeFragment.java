@@ -25,6 +25,7 @@ public class HomeFragment extends Fragment {
 
     View view;
     List<University> universityList;
+    public String[] profile = {};
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -51,14 +52,14 @@ public class HomeFragment extends Fragment {
     }
 
     private void onClickGoToMajors(University university) {
-//        List<String> testList = new ArrayList<>(Arrays.asList(profile));
-//        testList.add(String.valueOf(university.getUniversity()));
-//        profile = testList.toArray(new String[0]);
+        List<String> testList = new ArrayList<>();
+        testList.add(String.valueOf(university.getUniversity()));
+        profile = testList.toArray(new String[0]);
 //        Log.e("here!", Arrays.toString(profile) + "====================================================");
 
         Intent intent = new Intent(getActivity(), ProfileActivity.class);
         Bundle bundle = new Bundle();
-        //bundle.putSerializable("profile", university);
+        bundle.putSerializable("profile", profile);
         bundle.putSerializable("university", university);
         intent.putExtras(bundle);
         startActivity(intent);

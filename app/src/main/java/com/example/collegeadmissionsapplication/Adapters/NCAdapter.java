@@ -87,7 +87,6 @@ public class NCAdapter extends RecyclerView.Adapter<NCAdapter.ViewHolder>{
         ImageView scan;
         LinearLayout nameCard, defaultLL, scanMethod;
 
-
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             name = itemView.findViewById(R.id.nameIC);
