@@ -7,6 +7,7 @@ import androidx.viewpager2.widget.ViewPager2;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -39,6 +40,7 @@ public class HomeActivity extends AppCompatActivity {
     NCAdapter ncAdapter;
     LinearLayout nameCardDemo;
     FrameLayout contentPanel;
+    boolean isNewUser = true;
 
 
     @SuppressLint("NonConstantResourceId")
@@ -89,18 +91,29 @@ public class HomeActivity extends AppCompatActivity {
 
         IntentResult intentResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
         if(intentResult.getContents() != null){
+            for(int i = 0; i <= mListNameCard.size(); i++){
+                NameCard nameCard = mListNameCard.get(i);
+                if(nameCard.getItem1().equals("")){
+                    mListNameCard.remove(i);
+                }
+            }
             getValueUser = intentResult.getContents();
             qrcode = getValueUser.replace("|", "_");
             identityCard = qrcode.split("_");
-            if(!getValueUser.equals("")){
+            if(!getValueUser.equals("") && identityCard.length == 7){
                 //set title cho name card
-                nameUser.setText(identityCard[2]);
+                if(isNewUser){
+                    nameUser.setText(identityCard[2]);
+                    isNewUser = false;
+                }
                 //set du lieu cho name card
                 mListNameCard.add(new NameCard("CCCD: " + identityCard[0], "Ngày Sinh: " + identityCard[3], "Giới Tính: " + identityCard[4], "Địa Chỉ: " + identityCard[5], "", "", "Tên: " + identityCard[2]));
                 mListNameCard.add(new NameCard("", "", "", "", "", "", ""));
                 ncAdapter = new NCAdapter(HomeActivity.this, mListNameCard);
                 mViewPager2.setAdapter(ncAdapter);
                 mCircleIndicator3.setViewPager(mViewPager2);
+            }else{
+                Toast.makeText(HomeActivity.this, "Có gì đó nhầm lẫn chăng?", Toast.LENGTH_SHORT).show();
             }
         }else{
             Toast.makeText(HomeActivity.this, "Bạn vẫn chưa scan thứ gì...", Toast.LENGTH_SHORT).show();

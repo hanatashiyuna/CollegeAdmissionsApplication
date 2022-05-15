@@ -11,7 +11,6 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-import com.example.collegeadmissionsapplication.Adapters.AnimFragmentAdapter;
 import com.example.collegeadmissionsapplication.R;
 
 public class WelcomeAnimFragment1 extends Fragment {
@@ -33,7 +32,7 @@ public class WelcomeAnimFragment1 extends Fragment {
         lightAnim = AnimationUtils.loadAnimation(getContext(), R.anim.top_to_bottom);
         humanAnim = AnimationUtils.loadAnimation(getContext(), R.anim.left_to_right);
         smallCircleAnim = AnimationUtils.loadAnimation(getContext(), R.anim.right_to_left);
-        bigCircleAnim = AnimationUtils.loadAnimation(getContext(), R.anim.slanted_up_right);
+        bigCircleAnim = AnimationUtils.loadAnimation(getContext(), R.anim.slanted_up_left);
 
         light.startAnimation(lightAnim);
         human.startAnimation(humanAnim);

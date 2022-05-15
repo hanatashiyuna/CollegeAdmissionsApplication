@@ -3,7 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UI.Fragment.WelcomeAnimFragment4"
-    android:background="@color/main_color">
+    tools:context=".UI.Fragment.WelcomeAnimFragment4">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/welcome_fragment4"/>
 
 </FrameLayout>
