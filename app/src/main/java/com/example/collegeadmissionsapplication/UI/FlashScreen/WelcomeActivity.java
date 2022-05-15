@@ -64,7 +64,7 @@ public class WelcomeActivity extends AppCompatActivity {
     }
 
     private void goSignIn() {
-        Intent intent = new Intent(WelcomeActivity.this, HomeActivity.class);
+        Intent intent = new Intent(WelcomeActivity.this, SignInActivity.class);
         startActivity(intent);
     }
 
