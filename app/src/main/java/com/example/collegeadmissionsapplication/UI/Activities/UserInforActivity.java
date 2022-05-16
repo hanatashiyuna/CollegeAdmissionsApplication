@@ -20,7 +20,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.collegeadmissionsapplication.R;
-import com.example.collegeadmissionsapplication.UI.Spinner.CustomSpinner;
+import com.example.collegeadmissionsapplication.UI.CustomUI.CustomSpinner;
 import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.normal.TedPermission;
 

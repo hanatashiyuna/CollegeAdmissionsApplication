@@ -1,4 +1,4 @@
-package com.example.collegeadmissionsapplication.UI.Spinner;
+package com.example.collegeadmissionsapplication.UI.CustomUI;
 
 import android.content.Context;
 import android.content.res.Resources;

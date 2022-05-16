@@ -123,7 +123,7 @@
                     android:text="Giới Tính:"
                     android:textSize="12sp" />
 
-                <com.example.collegeadmissionsapplication.UI.Spinner.CustomSpinner
+                <com.example.collegeadmissionsapplication.UI.CustomUI.CustomSpinner
                     android:id="@+id/gender"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
@@ -165,7 +165,7 @@
                     android:text="Khu Vực:"
                     android:textSize="12sp" />
 
-                <com.example.collegeadmissionsapplication.UI.Spinner.CustomSpinner
+                <com.example.collegeadmissionsapplication.UI.CustomUI.CustomSpinner
                     android:id="@+id/area"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
@@ -293,7 +293,7 @@
                     android:text="Cán bộ tư vấn:"
                     android:textSize="12sp" />
 
-                <com.example.collegeadmissionsapplication.UI.Spinner.CustomSpinner
+                <com.example.collegeadmissionsapplication.UI.CustomUI.CustomSpinner
                     android:id="@+id/consultants"
                     android:layout_width="0dp"
                     android:layout_height="40dp"

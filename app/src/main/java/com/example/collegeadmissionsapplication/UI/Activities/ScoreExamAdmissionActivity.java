@@ -15,7 +15,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.example.collegeadmissionsapplication.R;
-import com.example.collegeadmissionsapplication.UI.Spinner.CustomSpinner;
+import com.example.collegeadmissionsapplication.UI.CustomUI.CustomSpinner;
 
 import java.util.Arrays;
 import java.util.HashMap;

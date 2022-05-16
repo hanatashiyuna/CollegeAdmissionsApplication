@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.example.collegeadmissionsapplication.UI.Spinner.CustomSpinner
+    <com.example.collegeadmissionsapplication.UI.CustomUI.CustomSpinner
         android:id="@+id/admission_division"
         android:layout_width="match_parent"
         android:layout_height="40dp"
