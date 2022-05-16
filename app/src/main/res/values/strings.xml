@@ -13,6 +13,12 @@
     <string name="input">Nhập Thông Tin</string>
     <string name="non_profile">Bạn chưa có thông tin. Vui lòng tạo hồ sơ.</string>
     <string name="public_user">Khách</string>
+    <string name="login">Đăng nhập</string>
+    <string name="email">Email</string>
+    <string name="password">Mật khẩu</string>
+    <string name="forgot_pass">Quên mật khẩu?</string>
+    <string name="sign_in">Đăng ký</string>
+    <string name="sent_email">Mã OTP đã được gửi về email</string>
     <string-array name="admissions_division">
         <item>Khối A</item>
         <item>Khối A1</item>

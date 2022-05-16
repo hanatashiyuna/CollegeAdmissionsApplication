@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CollegeAdmissionsApplication">
         <activity
+            android:name=".UI.Sign.CheckOTPActivity"
+            android:exported="false" />
+        <activity
             android:name=".UI.Sign.SignInActivity"
             android:exported="false" />
         <activity
