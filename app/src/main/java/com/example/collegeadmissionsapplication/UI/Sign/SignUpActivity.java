@@ -26,7 +26,8 @@ import javax.mail.internet.MimeMessage;
 
 public class SignUpActivity extends AppCompatActivity {
 
-    private int random;
+    public int random;
+    public boolean againOTP = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,6 +76,7 @@ public class SignUpActivity extends AppCompatActivity {
                 Intent intent = new Intent(SignUpActivity.this, CheckOTPActivity.class);
                 bundle.putString("email", getEmail);
                 bundle.putString("otp", String.valueOf(random));
+                bundle.putBoolean("again_otp", againOTP);
                 intent.putExtras(bundle);
                 loadingDialog.dismissDialog();
                 startActivity(intent);
