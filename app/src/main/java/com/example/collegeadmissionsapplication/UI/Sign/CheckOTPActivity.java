@@ -160,12 +160,12 @@ public class CheckOTPActivity extends AppCompatActivity {
             });
 
             try {
-                Message message = new MimeMessage(session);
-                message.setFrom(new InternetAddress(myEmail));
-                message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(getEmail));
-                message.setSubject("OTP code from Yuna");
-                message.setText(sendMessage);
-                Transport.send(message);
+//                Message message = new MimeMessage(session);
+//                message.setFrom(new InternetAddress(myEmail));
+//                message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(getEmail));
+//                message.setSubject("OTP code from Yuna");
+//                message.setText(sendMessage);
+//                Transport.send(message);
                 Toast.makeText(CheckOTPActivity.this, "Send to email success!", Toast.LENGTH_SHORT).show();
             }catch (Exception e){
                 e.printStackTrace();
